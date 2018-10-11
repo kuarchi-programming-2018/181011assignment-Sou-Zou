@@ -21,10 +21,12 @@
 # おみくじプログラム
 
 import random
-line = input().rstrip()
+line = input().rstrip().split(“,”)
+num = len(line)
+omikuzi = random.randrange(num)
+print(line[omikuzi])
 
 # 今回は自力で全部書いてみよう！
-
 # カンマで分割して、リストに代入
 # リストの要素数を変数に代入
 # リストの中身を出力
